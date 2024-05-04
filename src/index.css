@@ -1,0 +1,96 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.App-header, .App-body {
+  padding: 0 calc(100% - 900px);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.comments-block {
+  margin-bottom: 1rem;
+  padding: 30px !important;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+.comments-block p {
+  margin: 0;
+  width: 90%;
+}
+
+.comments-line {
+  display: flex;
+  padding: 5px;
+}
+
+.create-comment-btn {
+  padding: .5rem 1rem;
+}
+
+#modal-window {
+  display: none;
+  position: absolute;
+  top: 23%;
+  left: 30%;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  background-color: #242424;
+}
+
+.modal-window__prompt {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.modal-window__prompt textarea {
+  width: 39rem;
+  height: 10rem;
+}
+
+.modal-window__btn-block {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
